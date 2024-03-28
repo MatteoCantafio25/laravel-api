@@ -1,28 +1,14 @@
-# Laravel Boolfolio - Project Typology
+# Laravel Boolfolio - API (Parte Api)
 
-Esercizio di oggi: **Laravel Boolfolio - Project Typology**  
-nome repo: `laravel-one-to-many`
+Esercizio di oggi: **Laravel Boolfolio - API**
 
 Ciao ragazzi,  
-continuiamo a lavorare sul codice dei giorni scorsi, ma in una nuova repo e aggiungiamo una nuova entità Type. Questa
-entità rappresenta la tipologia di progetto ed è in relazione one to many con i progetti.
+continuiamo a lavorare sul codice dei giorni scorsi, ma in una nuova repo.  
+L’esercizio di oggi è suddiviso in milestone ed è importante che ne seguiate l’ordine.
 
-I task da svolgere sono diversi, ma alcuni di essi sono un ripasso di ciò che abbiamo fatto nelle lezioni dei giorni
-scorsi:
+**Milestone 1**  
+nome repo 1: `laravel-api`  
+Aggiungiamo al nostro progetto Laravel una nuovo Api/ProjectController. Questo controller risponderà a delle richieste via API e si occuperà di restituire la lista dei progetti presenti nel database in formato json.
 
--   creare il model Type
--   creare la migration per la tabella types
--   creare la migration di modifica per la tabella projects per aggiungere la chiave esterna
--   aggiungere ai model Type e Project i metodi per definire la relazione one to many
--   visualizzare nella pagina di dettaglio di un progetto la tipologia associata, se presente
--   permettere all’utente di associare una tipologia nella pagina di creazione e modifica di un progetto
--   gestire il salvataggio dell’associazione progetto-tipologia con opportune regole di validazione
-
-**Bonus 1:**  
-creare il seeder per il model Type.
-
-**Bonus 2:**  
-aggiungere le operazioni CRUD per il model Type, in modo da gestire le tipologie di progetto direttamente dal pannello
-di amministrazione.
-
-Buon lavoro e buon divertimento!
+**Milestone 2**  
+Testiamo la chiamata API tramite Postman e assicuriamoci di ricevere i dati correttamente.
