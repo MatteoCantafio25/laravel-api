@@ -32,5 +32,7 @@ use App\Http\Controllers\Api\ProjectController;
 //? Operazione automatica
 Route::apiResource('projects', ProjectController::class)->only('index');
 
+Route::get('/projects/{slug}', [ProjectController::class, 'show']);
+
 
 
