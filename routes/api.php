@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\TypeProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,7 @@ use App\Http\Controllers\Api\ProjectController;
 Route::apiResource('projects', ProjectController::class)->only('index');
 
 Route::get('/projects/{slug}', [ProjectController::class, 'show']);
+Route::get('/types/{slug}/projects', TypeProjectController::class);
 
 
 
